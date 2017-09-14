@@ -41,11 +41,12 @@ public class WelcomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         bingIv = (ImageView)findViewById(R.id.welcome_bing_iv);
-        loadBingPic();
-        dbManager = DBManager.getInstance(getApplicationContext());
-        sharepreferences=this.getSharedPreferences("check", MODE_PRIVATE);
-        editor=sharepreferences.edit();
-        initPermission();
+        startMusicActivity();
+//        loadBingPic();
+//        dbManager = DBManager.getInstance(getApplicationContext());
+//        sharepreferences=this.getSharedPreferences("check", MODE_PRIVATE);
+//        editor=sharepreferences.edit();
+//        initPermission();
 
     }
 
